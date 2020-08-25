@@ -23,7 +23,7 @@ library('dplyr')
 library('rgdala')
 
 ### Como unload un paquete que no estoy usando
-detach("package:ggplot2", unload = TRUE) 
+detach("package:dplyr", unload = TRUE)
 
 ### Older version 
 require(devtools)
@@ -116,7 +116,7 @@ char_vec
 #------------#
 
 ### Generemos una matriz de numeros aleatorios (de una distribucion normal)
-matriz_normal <- matrix(rnorm(n = 25,mean = 100 ,sd = 10) , nrow = 5, ncol = 5) # Matriz de 3*5
+matriz_normal <- matrix(rnorm(n = 25,mean = 100 ,sd = 10) , nrow = 5, ncol = 5) # Matriz de 5*5
 matriz_normal # Ver la matriz sobre la consola
 nrow(matriz_normal) # Numero de filas
 ncol(matriz_normal) # Numero de columnas
@@ -126,6 +126,7 @@ colnames(matriz_normal)
 ### Cambiemos los nombres de las columnas en una matriz
 colnames(matriz_normal)
 colnames(matriz_normal) <- c("Columna 1","Columna 2","Columna 3","Columna 4","Columna 5")
+colnames(matriz_normal)[2] = "Col 2"
 matriz_normal
 rownames(matriz_normal) # Cambien ustedes los nombres de las filas
 

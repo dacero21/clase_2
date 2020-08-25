@@ -13,10 +13,13 @@ setwd("~/Downloads")
 download.file(url = "https://github.com/taller-R/clase_2/archive/master.zip", 
               destfile = "clase_2.zip")
 
-# 3. Cambiar nuevamente el directorio de trabajo
+# 3. Descomprimir las carpeta
+unzip(zipfile = "clase_2.zip")
+
+# 4. Cambiar nuevamente el directorio de trabajo
 setwd("~/Downloads/clase_2-master")
 
-# 4. Inspeccionar archivos en el directorio 
+# 5. Inspeccionar archivos en el directorio 
 list.files()
 ```
 O puedes seguir estas otras [instruciones](https://eduard-martinez.github.io/blog/github/clonar_github.html).  
