@@ -1,5 +1,5 @@
 ---
-pagetitle: "Clase 1"
+pagetitle: "Clase 2"
 outpudir: "~/Dropbox/Teaching/Taller de R/GitHub/Clases/Clase 2"
 autor: Eduard F Martinez-Gonzalez
 Nota: En este script no se incluyen acentos ni caracteres especiales para evitar conflictos con otros sistemas operativos.
