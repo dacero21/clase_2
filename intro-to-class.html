@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Taller de R: Estadística y programación</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Eduard Martinez" />
+    <link href="libs/remark-css/fc.css" rel="stylesheet" />
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Taller de R: Estadística y programación
+## Lectura 2: Rstudio y GitHub
+### Eduard Martinez
+### Universidad de los Andes | <a href="https://github.com/taller-R">ECON-1302</a>
+
+---
+
+
+
+# Contenido
+
+1. [Rstudio](#rstudio)
+   
+   1.1. Interfaz de Rstudio
+   
+   1.2. Decoding messages
+
+2. [Use R!](#use_r)
+   
+   2.1. Sintaxis de R
+   
+   2.2. Editor de sintaxis
+   
+   2.3. Librerías
+
+3. [Git y GitHub](#github)
+
+   3.1. Qué es Git y GitHub?
+   
+   3.2. Flujo de trabajo
+
+
+&lt;!---------------------&gt;
+&lt;!--- Interfaz de Rstudio ---&gt;
+&lt;!---------------------&gt;
+---
+class: inverse, center, middle
+name: rstudio
+
+# Rstudio
+
+&lt;html&gt;&lt;div style='float:left'&gt;&lt;/div&gt;&lt;hr color='#FF007F' size=1px width=796px&gt;&lt;/html&gt;
+
+[RStudio](https://rstudio.com) es un entorno de desarrollo integrado para el lenguaje de programación [R](https://www.r-project.org), dedicado a la computación estadística y gráficos.  
+
+---
+# Interfaz de Rstudio
+
+&lt;div align="center"&gt;
+&lt;img src="https://2.bp.blogspot.com/-8cS_-ByUIbY/WhPODv_o-YI/AAAAAAAADnM/KQlXRcCrgAM3OWYVMTsZQ7CqpMlZcmPiQCLcBGAs/s640/introductionrstudio.jpg" height=500&gt;
+&lt;/div&gt;
+
+---
+# Cambiar la apariencia de Rstudio
+
+&lt;div align="center"&gt;
+&lt;img src="pics/change_apparence.gif"&gt;
+&lt;/div&gt;
+
+---
+# Decoding messages
+
+`Warning` y `message`: estas notificaciones se muestran sobre la consola y pueden generarse después de aplicar algunas funciones. Generalmente indican que hay detalles de la función que debemos tener en cuenta, pero no se detiene la ejecución de la función.
+
+`Error:` esta notificación se muestran sobre la consola y se genera cuando ocurrió un error importante, por lo que la función no sigue ejecutándose.
+
+&lt;div align="center"&gt;
+&lt;img src="pics/decoding_messages.png" height=300&gt;
+&lt;/div&gt;
+
+
+&lt;!---------------------&gt;
+&lt;!---    Use R    ---&gt;
+&lt;!---------------------&gt;
+---
+class: inverse, center, middle
+name: use_r
+
+# Use R!
+
+&lt;html&gt;&lt;div style='float:left'&gt;&lt;/div&gt;&lt;hr color='#FF007F' size=1px width=796px&gt;&lt;/html&gt;
+
+
+---
+# En R ...
+
+1. Todo en R es un objeto.
+
+2. Todo en R tiene un nombre.
+
+3. Se usan funciones para crear, editar, transformar o eliminar objetos.  
+
+4. Los objetos se almacenan temporalmente en el entorno o la memoria activa de R.
+
+5. Todas las funciones han sido escritas anteriormente por otros colaboradores en paquetes o librerías que debemos "llamar" cada vez que se vayan a usar.
+
+6. Para crear un objeto en R: 
+
+   **nombre objeto** + **asignar** + **funcion()**
+
+
+```r1
+# De esta forma
+datos &lt;- rnorm(n = 10 , mean = 50 , sd = 10)
+
+# O esta forma
+data = rnorm(n = 10 , mean = 40 , sd = 10)
+```
+---
+# Workflow en R
+
+&lt;div align="center"&gt;
+&lt;img src="pics/workflow_R.png"&gt;
+&lt;/div&gt;
+Tomado de: R para principiantes.
+
+---
+# Entorno de R:
+
+El entorno de trabajo de R almacena temporalmente los objetos que se crean durante una sesión. El espacio de trabajo puede ser guardado o no al momento de cerrar la sesión. 
+
+&lt;div align="center"&gt;
+&lt;img src="pics/environment.gif"&gt;
+&lt;/div&gt;
+
+---
+# Funciones:
+
+Las funciones permiten crear, editar, transformar o eliminar objetos. Estan contenidas en librerías. Y cada función contiene alemnos 1 argumento.
+
+&lt;div align="center"&gt;
+&lt;img src="pics/funcion.png" &gt;
+&lt;/div&gt;
+
+
+---
+# Editor de sintaxis:
+
+El editor de código o editor de sintaxis nos permite escribir las instrucciones que queremos ejecutar en R. Para ejecutarlas debemos sombrear toda la linea que queremos ejecutar y orpimir las teclas `Control` + `Enter` o haciendo clik en `run`.
+
+&lt;div align="center"&gt;
+&lt;img src="pics/editor_sintaxis.png" height=450&gt;
+&lt;/div&gt;
+
+---
+# Librerías
+
+Em R se pueden gestionar más de 17.000 librerías disponibles en el cran y otras miles más disponibles en GitHub. Para gestionar las librerias en R debemos:
+
+&lt;div align="center"&gt;
+&lt;img src="pics/gestionar_librerias.png"&gt;
+&lt;/div&gt;
+
+&lt;!---------------------&gt;
+&lt;!---    gitHub    ---&gt;
+&lt;!---------------------&gt;
+---
+class: inverse, center, middle
+name: github
+
+# Git y GitHub
+
+&lt;html&gt;&lt;div style='float:left'&gt;&lt;/div&gt;&lt;hr color='#FF007F' size=1px width=796px&gt;&lt;/html&gt;
+
+
+---
+# Qué es Git y GitHub?
+
+## Git: 
+
+- Git es un sistema de control de versiones distribuido. 
+
+- Bien, intente esto: Imagínese si Dropbox y la función "Seguimiento de cambios" en MS Word tuvieran un bebé. Git sería ese bebé.
+
+- De hecho, es incluso mejor que eso porque Git está optimizado para las cosas en las que los economistas y los científicos de datos pasan mucho tiempo trabajando (por ejemplo, el código).
+
+- Hay una curva de aprendizaje, pero les prometo que vale la pena.
+
+## GitHub:
+
+- Es importante darse cuenta de que Git y GitHub son cosas distintas.
+
+- GitHub es una plataforma de alojamiento en línea que proporciona una variedad de servicios integrados en el sistema Git. (Las plataformas similares incluyen Bitbucket y GitLab).
+
+
+---
+# Workflow en GitHub
+
+&lt;div align="center"&gt;
+&lt;img src="https://gcapes.github.io/swc-pr-tutorial/fig/push-pull.svg" height=500&gt;
+&lt;/div&gt;
+
+---
+# Trabajo colaborativo en GitHub
+
+&lt;div align="center"&gt;
+&lt;img src="pics/colaborative.png" height=500&gt;
+&lt;/div&gt;
+
+---
+# Trabajar en un repositorio de GitHub
+
+&lt;div align="center"&gt;
+&lt;img src="https://d33wubrfki0l68.cloudfront.net/a0e9a2797777e7dc0e9944f9aa08d2755b331c56/c4824/post/2017-08-23-a-git-workflow-for-ecologists_files/figure-html/prepare-repo-1.png" height=500&gt;
+&lt;/div&gt;
+
+---
+# Antes de trabajar en un repositorio local..
+
+&lt;div align="center"&gt;
+&lt;img src="https://d33wubrfki0l68.cloudfront.net/2cb3e3ff5f784c1040f4cea75cf366fc88d0a189/d5e22/post/2017-08-23-a-git-workflow-for-ecologists_files/figure-html/create-branch-1.png" height=500&gt;
+&lt;/div&gt;
+
+---
+# Después de trabajar en un repositorio local..
+
+&lt;div align="center"&gt;
+&lt;img src="https://d33wubrfki0l68.cloudfront.net/bba7142ce38b41e3ac77ed8b58340f0dd9fdce56/5622f/post/2017-08-23-a-git-workflow-for-ecologists_files/figure-html/commit-1.png" height=500&gt;
+&lt;/div&gt;
+
+---
+# Como usar Git...
+
+&lt;div align="center"&gt;
+&lt;img src="https://res.cloudinary.com/practicaldev/image/fetch/s--R0DkWatL--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/frx76vz2f2c9y0c1pwth.png" height=500&gt;
+&lt;/div&gt;
+
+
+---
+# Guardando los cambios de mi repositorio local a mi repositorio en GitHud
+
+Sobre la terminal escribimos:
+
+- 1. Marcamos todos los archivos que queremos agregar al repositorio:
+
+`git add -A`
+
+- 2. Etiquetar los cambios con un comentario:
+
+`git commit -m 'Escribir comentario'`
+
+- 3. Subir los cambios al repositorio online:
+
+`git push`
+
+
+&lt;!---------------------&gt;
+&lt;!---    Hoy vimos  ---&gt;
+&lt;!---------------------&gt;
+---
+class: inverse, center, middle
+
+# Hoy vimos...
+&lt;html&gt;&lt;div style='float:left'&gt;&lt;/div&gt;&lt;hr color='#FF007F' size=1px width=796px&gt;&lt;/html&gt;
+
+---
+#  Hoy vimos...
+
+## ☑ Interfaz de Rstudio
+
+## ☑ Decoding messages en RStudio
+
+## ☑ Sintaxis de R
+
+## ☑ Librerías
+
+## ☑ Flujo de trabajo en Git
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
