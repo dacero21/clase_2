@@ -6,10 +6,10 @@
 #++++++++++++++++++++++++++++++++++++++++++++++++++#
 
 ### Paquetes instalados 
-installed.packages()[,c(1,3,4)]
+installed.packages()[,c(1,3,4)] 
 
 ### Esta instalado un paquete? 
-is.element("ggplot2",installed.packages()[,1])
+is.element("ggplot2",installed.packages()[,1]) # Preguntar por ggplot2
 
 ### Instalar un paquete
 install.packages("dplyr")
